@@ -1,0 +1,33 @@
+Etiquetas mas utilizadas de html
+LAYOUT: es el diseño de la pagina
+ -header
+ -nav
+ -section
+ -article
+ -aside
+ -footer
+
+ ENLACES: Es para colocar elaces para dirigir a otras paginas
+  -a
+
+  TEXTOS
+  -H1 a H6
+  -P
+  -SPAN
+
+  IMAGENES Y VIDEOS
+  -Img 
+  -SVG
+  -IFRAME
+  -VIDEOS
+
+  FORMULARIOS
+  -forms
+  -imput: texto que va antes de las opciones
+  -label
+  -botton
+
+  LISTAS
+  -ul
+  -li
+  -ol
