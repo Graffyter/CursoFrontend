@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        background-color: lightgray;
+    }
+        section{
+            width: 100%;
+            display: flex ;
+            justify-content: center;   
+            margin-top: 300px;        
+        }
+       .card{
+        width: 400px;
+        height: 600px;
+        background-color: lightblue;
+        border-radius: 20px;
+        box-shadow:0px 10px 10px 5px rgba(0,0,0,0.16)
+      
+       }
+       .head{
+        background: url(Imagenes/top_card.jpg) center/cover;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        height: 180px;
+        
+        /* position: absolute; */
+       }
+       .profimg{
+        display: flex;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: solid;
+        border-width: 5px;
+        border-color: white;
+       /*  position: absolute; */
+       /*  margin-left: 150px;
+        margin-right: 150px; */
+        /* margin-top: 160px; */
+        margin-top: -85px;
+        margin: 0px auto;
+       }
+       .profile{
+        display: flex;
+        font-family: Arial, Helvetica, sans-serif;
+        justify-content: center;
+        z-index: 6;
+       }
+       .edad {
+        margin-left: 10px;
+        color: gray;
+       }
+       .cargo{
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        display: flex;
+        justify-content: center;
+       }
+       .foter{
+        background-color: rgb(6, 127, 241);
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        width: 400px;
+        height: 50px;
+        position: absolute;
+        margin-top: 550px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+       }
+       .foter p{
+        display: flex;
+        justify-content: center;
+        
+       }
+
+    </style>
+</head>
+<body>
+<section>
+    <div class="card">
+        <div class="head">
+            <p>Welcome</p>
+        </div>
+        <img class="profimg" src="Imagenes/image.jpeg" alt="profile-photo">
+        <div class="profile">
+            <p><strong>Alejandro Restrepo Rivera </strong></p><p class="edad">26</p>
+        </div>
+        <div class="cargo">Frontend Developer</div>
+    </div>
+    <div class="foter">
+        <p>Follow</p>
+    </div>
+</section>
+
+</body>
+</html>
