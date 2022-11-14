@@ -17,18 +17,22 @@
         }
        .card{
         width: 400px;
-        height: 600px;
+        height: 500px;
         background-color: lightblue;
         border-radius: 20px;
         box-shadow:0px 10px 10px 5px rgba(0,0,0,0.16)
       
        }
        .head{
+        display: flex;
         background: url(Imagenes/top_card.jpg) center/cover;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         height: 180px;
-        
+        justify-content: center;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
         /* position: absolute; */
        }
        .profimg{
@@ -43,8 +47,8 @@
        /*  margin-left: 150px;
         margin-right: 150px; */
         /* margin-top: 160px; */
-        margin-top: -85px;
         margin: 0px auto;
+        margin-top: -55px;
        }
        .profile{
         display: flex;
@@ -61,6 +65,24 @@
         display: flex;
         justify-content: center;
        }
+       .content{
+        display: inline-flex;
+        width: 100%;
+        height: 67px;
+        align-items: center;
+        text-align: center;
+        justify-content: space-around;
+        background:rgb(128, 204, 235);
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 79px;
+
+       }
+       .card .content p{
+        font-weight: bold;
+       }
+       .card .content span{
+        color: ;
+       }
        .foter{
         background-color: rgb(6, 127, 241);
         font-family: Arial, Helvetica, sans-serif;
@@ -68,7 +90,7 @@
         width: 400px;
         height: 50px;
         position: absolute;
-        margin-top: 550px;
+        margin-top: 450px;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
        }
@@ -86,12 +108,25 @@
         <div class="head">
             <p>Welcome</p>
         </div>
-        <img class="profimg" src="Imagenes/image.jpeg" alt="profile-photo">
+        <div class="profile-data">
+            <img class="profimg" src="Imagenes/image.jpeg" alt="profile-photo">
         <div class="profile">
             <p><strong>Alejandro Restrepo Rivera </strong></p><p class="edad">26</p>
         </div>
         <div class="cargo">Frontend Developer</div>
+        </div>
+        <div class="content">
+            <div>
+                    <p>592</p>
+                    <span>Followers</span>
+                </div>
+                <div>
+                    <p>139</p>
+                    <span>Follows</span>
+                </div>
+        </div>
     </div>
+    
     <div class="foter">
         <p>Follow</p>
     </div>
