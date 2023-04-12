@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.cardFull{
+    display: flex;
+    height: 600px;
+    width: 400px;
+    background: linear-gradient(black, #f84c12) ;
+    border-radius: 30px;
+}
+
+.card{
+    display: block;
+}
+
+.cardTop{
+    height: 400px;
+    width: 300px;
+}
+
+.cardBot{
+    width: 200px;
+    height: 300px;
+}
+
+.logo{
+    position: relative;
+    top: -40px;
+    left: -60px;
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+    rotate: -30deg;
+}
+.character{
+    height: 600px;
+}
+
+.actor{
+    height: 600px;
+    position: relative;
+    left: -120px;
+}
