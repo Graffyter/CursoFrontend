@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    font-family: 'Anton', sans-serif;
+    font-size: 62.5%;
 }
 
 html{
@@ -18,7 +20,7 @@ body{
 .cardFull{
     display: flex;
     height: 600px;
-    width: 400px;
+    width: 300px;
     background: linear-gradient(black, #f84c12) ;
     border-radius: 30px;
 }
@@ -29,8 +31,28 @@ body{
 
 .cardTop{
     height: 400px;
-    width: 300px;
+    width: 200px;
 }
+.cardTop p{
+    font-size: 8rem;
+    color: white;
+    letter-spacing: 20px;
+    position: relative;
+    left: 50px;
+}
+
+.cardTop .mate{
+    top: -80px;
+}
+
+.cardTop .blur{
+    top: -172px;
+    z-index: 100;
+    opacity: 40%;
+}
+
+
+
 
 .cardBot{
     width: 200px;
