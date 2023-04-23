@@ -40,8 +40,9 @@ body{
     font-size: 4rem;
     align-items: center;
 }
-.Menu .selected{
+.MenuItems:hover{
     font-size: 4.5rem;
+    background: linear-gradient(black, rgb(43, 43, 43) );
 }
 .Menu li{
     display: inline-block;
@@ -51,6 +52,54 @@ body{
     padding: 0 20px;
 }
 
+/* CUERPO DEL ARTICULO */
+
+.infoTeam{
+    display: flex;
+}
+
+        /* LEFT SIDE */
+.leftBar{
+    height: 100vh;
+    width: 400px;
+    background-color: black;
+    display: block;
+    padding: 15px 50px;
+
+}
+
+.leftItems{
+    overflow:hidden;
+    margin: 15px 0;
+    height: 100px;
+    width: 300px;
+    background: linear-gradient(90deg, black , #f84c12);
+    border: solid 2px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+.logoLeft{
+    height: 100px;
+    width: 100px;
+}
+.logoLeft img{
+    object-fit: cover;
+    position: relative;
+    top: -30px;
+    left: -30px;
+    width: 150px;
+    height: 150px;
+    rotate: -35deg;
+}
+.leftItems h1{
+    color: white;
+    font-size: 3rem;
+    z-index: 100;
+    position: relative;
+    left: -50px;
+    letter-spacing: 5px;
+}
 
 /* TARJETA DEL PERSONAJE */
 .cardFull{
