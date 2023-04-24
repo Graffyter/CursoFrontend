@@ -17,7 +17,7 @@ body{
 /* BARRA DE NAVEGACION */
 .navBar {
     display: flex;
-    height: 100px;
+    height: 10vh;
     position: sticky;
     background-color: black;
     width: 100%;
@@ -37,12 +37,16 @@ body{
 .Menu{
     display: flex;
     list-style: none;
-    font-size: 4rem;
+    font-size: 3.5rem;
     align-items: center;
 }
+.MenuItems{
+    transition: 900ms;
+}
 .MenuItems:hover{
-    font-size: 4.5rem;
+    font-size: 4rem;
     background: linear-gradient(black, rgb(43, 43, 43) );
+    transition: 900ms;
 }
 .Menu li{
     display: inline-block;
@@ -60,7 +64,7 @@ body{
 
         /* LEFT SIDE */
 .leftBar{
-    height: 100vh;
+    height: 90vh;
     width: 400px;
     background-color: black;
     display: block;
@@ -73,11 +77,18 @@ body{
     margin: 15px 0;
     height: 100px;
     width: 300px;
-    background: linear-gradient(90deg, black , #f84c12);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 37%, rgba(248,76,18,1) 100%);
     border: solid 2px;
     border-radius: 20px;
     display: flex;
     align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    transition: 1000ms;
+}
+.leftItems:hover{
+    transition: 1000ms;
+    width: 325px;
+    height: 125px;
 }
 .logoLeft{
     height: 100px;
@@ -99,9 +110,32 @@ body{
     position: relative;
     left: -50px;
     letter-spacing: 5px;
+    width: 125px;
+}
+.leftItems .rolName{
+    width: 100px;
+    height: 125px;
+    display: flex;
+    align-items: center;
+}
+
+.leftItems .role{
+    width: 100px;
+    height: 100px;
+}
+.leftItems .role img{
+    width: 100px;
+    height: 100px;
+    position: relative;
+
 }
 
 /* TARJETA DEL PERSONAJE */
+.player{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .cardFull{
     display: flex;
     height: 600px;
