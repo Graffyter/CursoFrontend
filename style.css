@@ -67,8 +67,10 @@ body{
     height: 90vh;
     width: 400px;
     background-color: black;
-    display: block;
-    padding: 15px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
 
 }
 
@@ -129,20 +131,37 @@ body{
     position: relative;
 
 }
+/* CONTENIDO */
 
-/* TARJETA DEL PERSONAJE */
 .player{
     display: flex;
-    justify-content: center;
     align-items: center;
+    width: 1500px;
+    background: black;
 }
+/* BIOGRAFIA */
+.biografia{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    font-size: 3rem;
+    margin: 0 100px 0 200px;
+    color: white;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    font-size: 5rem;
+}
+/* TARJETA DEL PERSONAJE */
 .cardFull{
     display: flex;
     height: 600px;
     width: 300px;
     background: linear-gradient(black, #f84c12) ;
     border-radius: 30px;
-    box-shadow: -23px 25px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px 
 }
 .card{
     display: block;
@@ -164,7 +183,7 @@ body{
     top: -80px;
 }
 .cardTop .blur{
-    top: -172px;
+    top: -200px;
     z-index: 100;
     opacity: 40%;
 }
@@ -192,8 +211,8 @@ body{
 .name1 {
     font-size: 6rem;
     position: relative;
-    left: 40px;
-    top: -30px;
+    left: 50px;
+    top: -80px;
     z-index: 100;
     color: white;
 }
@@ -201,8 +220,8 @@ body{
     font-size: 4rem;
     width: 300px;
     position: relative;
-    left: 40px;
-    top: -40px;
+    left: 50px;
+    top: -80px;
     color: white;
     opacity: 60%;
     z-index: 100;
@@ -218,7 +237,7 @@ body{
     align-items: center;
     font-size: 4rem;
     color: white;
-    top: -15px;
+    top: -45px;
     left: 100px;
     z-index: 100;
 }
